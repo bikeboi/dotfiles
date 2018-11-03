@@ -83,8 +83,11 @@
           (evil   . (telephone-line-airline-position-segment))))
   :config (telephone-line-mode 1))
 
-;; Language stuff
+;; Documents and Latex
+(use-package latex-preview-pane
+  :ensure t)
 
+;; Language stuff
 ;; I will defer actual language configurations for when I get a hold of my setup again.
 ;; For now, just most used packages
 
@@ -104,3 +107,7 @@
 ;; YAML
 (use-package yaml-mode
   :ensure t)
+
+(use-package markdown-mode
+  :ensure t)
+
