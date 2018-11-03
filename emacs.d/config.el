@@ -48,7 +48,10 @@
 ;; Git porcelain. Not much going on here
 (use-package magit
   :ensure t
-  :pin melpa-stable)
+  :bind ("C-x g" . magit-status)
+  :pin melpa-stable
+  :config
+  (add-hook 'after-save-hook 'magit-after-save-refresh-status))
 
 ;; Mah modeline
 (use-package telephone-line
@@ -82,10 +85,22 @@
 
 ;; Language stuff
 
+;; I will defer actual language configurations for when I get a hold of my setup again.
+;; For now, just most used packages
+
+;; Ubiquitous
+(use-package company
+  :ensure t)
+
+;; Langauge specific packages
 ;; Haskell
 (use-package haskell-mode
   :ensure t)
 
 ;; JS
-(use-package rsjx-mode
+(use-package rjsx-mode ;; JS and JSX syntax highligting
+  :ensure t)
+
+;; YAML
+(use-package yaml-mode
   :ensure t)
