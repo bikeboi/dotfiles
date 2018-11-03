@@ -112,7 +112,12 @@
 (use-package yaml-mode
   :ensure t)
 
+;; Markdown
 (use-package markdown-mode
+  :ensure t)
+
+;; Python
+(use-package elpy
   :ensure t)
 
 ;; Misc.
