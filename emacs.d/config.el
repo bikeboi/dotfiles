@@ -26,7 +26,11 @@
 (use-package solarized-theme
   :ensure t
   :config
-  (let ((picked-theme (if (> (caddr (decode-time)) 18) 'solarized-dark 'solarized-light)))
+  ;; Load dark theme in the evening, light theme in the day
+  (let ((picked-theme (if (or (> (caddr (decode-time)) 18)
+			      (< (caddr (decode-time)) 7))
+                          'solarized-dark
+                          'solarized-light)))
     (load-theme picked-theme t)))
 
 ;; Minibuffer autocompletion
