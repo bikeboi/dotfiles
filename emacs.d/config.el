@@ -111,3 +111,5 @@
 (use-package markdown-mode
   :ensure t)
 
+;; Misc.
+(setq active-user-alias "Kareithi")
