@@ -33,6 +33,10 @@
                           'solarized-light)))
     (load-theme picked-theme t)))
 
+;; Eshell PATH stuff
+(add-to-list 'exec-path "/usr/local/bin")
+(add-to-list 'exec-path "/usr/local/opt/python/libexec/bin")
+
 ;; Minibuffer autocompletion
 (use-package smex
   :ensure t
