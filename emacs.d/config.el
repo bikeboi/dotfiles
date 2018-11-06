@@ -106,7 +106,8 @@
 
 ;; JS
 (use-package rjsx-mode ;; JS and JSX syntax highligting
-  :ensure t)
+  :ensure t
+  :mode "\\.js\\'")
 
 ;; YAML
 (use-package yaml-mode
