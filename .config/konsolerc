@@ -1,0 +1,17 @@
+[Desktop Entry]
+DefaultProfile=bike.profile
+
+[DownloadDialog Settings]
+Height 768=510
+Width 1366=700
+
+[Favorite Profiles]
+Favorites=bike.profile
+
+[MainWindow]
+Height 768=739
+State=AAAA/wAAAAD9AAAAAAAABVYAAALFAAAABAAAAAQAAAAIAAAACPwAAAAA
+ToolBarsMovable=Disabled
+Width 1366=683
+Window-Maximized 720x1280=true
+Window-Maximized 768x1366=true

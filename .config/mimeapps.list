@@ -1,0 +1,10 @@
+[Added Associations]
+application/pdf=firefox.desktop;
+application/vnd.comicbook+zip=mcomix.desktop;org.kde.peruse.desktop;
+application/postscript=firefox.desktop;
+
+[Default Applications]
+application/pdf=firefox.desktop;
+application/vnd.comicbook+zip=mcomix.desktop;
+x-scheme-handler/jetbrains=jetbrains-toolbox.desktop
+x-scheme-handler/slack=slack.desktop

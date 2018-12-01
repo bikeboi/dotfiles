@@ -1,0 +1,29 @@
+[Containments][1][General]
+ToolBoxButtonState=topright
+ToolBoxButtonX=1336
+
+[DownloadDialog Settings]
+Height 768=510
+Width 1366=700
+
+[PlasmaRunnerManager]
+LaunchCounts=3 services_kcm_networkmanagement.desktop,10 services_org.kde.konsole.desktop,2 services_firefox.desktop,1 services_org.kde.kinfocenter.desktop,1 services_nic.desktop,5 services_systemsettings.desktop,1 services_kwintabbox.desktop,1 shell_zsh,1 services_org.gnome.Terminal.desktop,1 services_emacs.desktop,1 services_spotify.desktop
+pluginWhiteList=services,places,desktopsessions,PowerDevil,shell,bookmarks,recentdocuments,locations,baloosearch
+
+[PlasmaViews][Panel 2]
+alignment=1
+panelVisibility=1
+
+[PlasmaViews][Panel 2][Horizontal1280]
+thickness=30
+
+[PlasmaViews][Panel 2][Horizontal1366]
+thickness=32
+
+[ScreenConnectors]
+0=eDP1
+1=HDMI1
+2=DP1
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/obsolete_kickoffrc.js

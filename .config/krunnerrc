@@ -1,0 +1,5 @@
+[General]
+history=emacs,FIREFox,KONS,kons,kon,firefox,file,slack,idea,pot,syst,potify,spoti,bluej,dolphin,intell,touch somefile.txt,pacman
+
+[PlasmaRunnerManager]
+LaunchCounts=1 windows_0_46137351,1 services_jetbrains-idea.desktop,1 shell_pacman,1 services_org.kde.konsole.desktop,1 services_org.kde.kinfocenter.desktop,1 services_slack.desktop,1 services_firefox.desktop,1 services_spotify.desktop,8 services_emacs.desktop,1 baloosearch_/home/bikeboi/pkgs/lightdm-slick-greeter/src/slick-greeter-1.2.2/files,1 shell_touch somefile.txt

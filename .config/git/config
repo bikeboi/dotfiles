@@ -1,0 +1,10 @@
+[user]
+	name = Michael Kareithi
+        email = mikegithegi@gmail.com
+        username = bikeboi
+
+[core]
+	editor = emacs
+
+[web]
+	browser = firefox

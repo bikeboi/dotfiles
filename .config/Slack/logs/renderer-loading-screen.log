@@ -1,0 +1,13 @@
+[11/26/18, 15:53:11:447] info: ╔═══════════════════════════════════════════════════════════════════════════════════╗
+[11/26/18, 15:53:11:448] info: ║      Slack 3.3.3, linux 4.19.2-arch1-1-ARCH on x64 at 11/26/18, 15:53:11:445      ║
+[11/26/18, 15:53:11:448] info: ╚═══════════════════════════════════════════════════════════════════════════════════╝
+[11/26/18, 15:53:11:540] info: Initializing local storage instance at path: /home/bikeboi/.config/Slack/local-settings.json
+[11/26/18, 15:53:11:941] info: Store: BACKGROUND_CLIENTS_INITIALIZED
+[11/26/18, 15:53:11:944] info: Store: BACKGROUND_CLIENTS_INITIALIZED true
+[11/26/18, 15:53:13:117] info: Store: SET_NETWORK_STATUS online
+[11/26/18, 15:53:13:123] info: Store: MAIN_WINDOW_SHOWN
+[11/26/18, 15:53:13:184] info: Store: ADD_WINDOW
+{
+  "id": 3,
+  "type": "sign-in"
+}

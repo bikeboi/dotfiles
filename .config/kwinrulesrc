@@ -1,0 +1,12 @@
+[1]
+Description=Application settings for emacs
+clientmachine=bike-arch
+clientmachinematch=0
+strictgeometry=false
+strictgeometryrule=2
+wmclass=emacs
+wmclasscomplete=false
+wmclassmatch=1
+
+[General]
+count=1

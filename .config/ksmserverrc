@@ -1,0 +1,36 @@
+[General]
+screenCount=1
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=10f7caddc8000154254912000000006260005
+clientId2=10f7caddc8000154254986300000006480005
+clientId3=10f7caddc8000154316117100000007040008
+clientId4=10f7caddc8000154350964500000007040340
+count=4
+discardCommand1[$e]=rm,$HOME/.config/session/kwin_10f7caddc8000154254912000000006260005_1543570392_778366
+program1=/usr/bin/kwin_x11
+program2=/usr/lib/org_kde_powerdevil
+program3=pulseaudio
+program4=firefox
+restartCommand1=/usr/bin/kwin_x11,-session,10f7caddc8000154254912000000006260005_1543570392_778366
+restartCommand2=/usr/lib/org_kde_powerdevil,-session,10f7caddc8000154254986300000006480005_1543570392_517110
+restartCommand3=
+restartCommand4=/usr/lib/firefox/firefox,--sm-client-id,10f7caddc8000154350964500000007040340
+restartStyleHint1=0
+restartStyleHint2=0
+restartStyleHint3=0
+restartStyleHint4=0
+userId1=bikeboi
+userId2=bikeboi
+userId3=bikeboi
+userId4=bikeboi
+wasWm1=true
+wasWm2=false
+wasWm3=false
+wasWm4=false
+
+[SubSession: 3bb597d3-5ad6-4285-b628-0967e48dcc3e]
+count=0
