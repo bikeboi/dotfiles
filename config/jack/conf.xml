@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+JACK settings, as persisted by D-Bus object.
+You probably don't want to edit this because
+it will be overwritten next time jackdbus saves.
+-->
+<!-- Sun Dec  2 23:56:09 2018 -->
+<jack>
+ <engine>
+  <option name="driver">alsa</option>
+ </engine>
+ <drivers>
+  <driver name="alsarawmidi">
+  </driver>
+  <driver name="loopback">
+  </driver>
+  <driver name="proxy">
+  </driver>
+  <driver name="netone">
+  </driver>
+  <driver name="firewire">
+  </driver>
+  <driver name="net">
+  </driver>
+  <driver name="dummy">
+  </driver>
+  <driver name="alsa">
+   <option name="playback">hw:PCH,0</option>
+   <option name="rate">22050</option>
+   <option name="duplex">false</option>
+   <option name="inchannels">0</option>
+  </driver>
+ </drivers>
+ <internals>
+  <internal name="netadapter">
+  </internal>
+  <internal name="profiler">
+  </internal>
+  <internal name="netmanager">
+  </internal>
+  <internal name="audioadapter">
+  </internal>
+ </internals>
+</jack>

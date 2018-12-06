@@ -1,0 +1,31 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Wed Dec  5 19:51:20 2018
+;; Desktop file format version 208
+;; Emacs version 26.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23560 11320 537783 854000) (desktop . "208") "bikeboi@bike-arch" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font-backend xft x) (font . "-ADBO-Source Code Pro-semibold-normal-normal-*-13-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#d6d6d4") (background-color . "#1c1e1f") (mouse-color . "#eff0f1") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "#eff0f1") (scroll-bar-background . "#eff0f1") (menu-bar-lines . 0) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen . maximized) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "#fb2874") (sticky) (environment) (powerline-cache) (frameset--id . "B8D8-0C1E-0F8A-963A") (frameset--mini t . t) (height . 43) (width . 168) (modeline . t) (unsplittable) (left . 0) (top . 0) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 4) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 68) (min-pixel-width . 80) (min-pixel-height-ignore . 34) (min-pixel-width-ignore . 32) (min-pixel-height-safe . 17) (min-pixel-width-safe . 16)) leaf (pixel-width . 1366) (pixel-height . 724) (total-width . 170) (total-height . 42) (normal-height . 1.0) (normal-width . 1.0) (buffer "config.org" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 4904) (start . 4213))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring nil)
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.config/emacs/" "/home/bikeboi/.config/emacs/config.org"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 208
+  "/home/bikeboi/.config/emacs/config.org"
+  "config.org"
+  'org-mode
+  '(override-global-mode undo-tree-mode)
+  4904
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time 23560 11315 38807 481000) (buffer-file-coding-system . undecided-unix) (overwrite-mode))
+  '((mark-ring nil)))
+

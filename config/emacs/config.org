@@ -1,0 +1,156 @@
+#+TITLE Bikeboi Emacs Config
+
+* Configuration
+** Package management
+   I use the basic 3 package repositories.
+   #+BEGIN_SRC emacs-lisp
+   (setq package-archives
+     '(("melpa" . "https://melpa.org/packages/")
+       ("melpa-stable" . "https://stable.melpa.org/packages/")
+       ("elpa" . "https://elpa.gnu.org/packages/")))
+  (package-initialize)
+  #+END_SRC
+  And =use-package= for package management.
+  #+BEGIN_SRC emacs-lisp
+  (require 'use-package)
+  #+END_SRC
+  I never really set the global value of =:ensure= to true like most peoeple do, because I tend to forget it's on, and sometimes I don't want a package in my reproducible config.
+
+** Evil Mode
+   I don't really tweak evil mode all that much. Mosty take it as is.
+   #+BEGIN_SRC emacs-lisp
+   (use-package evil
+     :ensure t
+     :config (evil-mode 1))
+   #+END_SRC
+   Then, since evil's normal-mode cursor doesn't actually go beyond =\n= character (it goes to the one before it), we have to make it.
+   #+BEGIN_SRC emacs-lisp
+   (setq evil-move-beyond-eol t)
+   #+END_SRC
+
+** Modeline
+   I use =spaceline= for my mode line
+   #+BEGIN_SRC emacs-lisp
+   (use-package spaceline
+     :ensure t
+     :init
+     (setq spaceline-highlight-face-func 'spaceline-highlight-face-evil-state)
+     :config
+     (spaceline-toggle-global-on) ;; Set EVERYTHING on
+     (spaceline-spacemacs-theme))
+   #+END_SRC
+
+** Backspace
+   Can't live without a smart backspace
+   #+BEGIN_SRC emacs-lisp
+   (use-package smart-hungry-delete
+     :ensure t
+     :bind ("<backspace>" . smart-hungry-delete-backward-char)
+     :defer nil ;; So we can do what's below
+     :config (smart-hungry-delete-add-default-hooks))
+   #+END_SRC
+
+** Version Control 
+   Magit, of course
+   #+BEGIN_SRC emacs-lisp
+   (use-package magit
+     :ensure t
+     :bind ("C-x g" . magit-status)
+     :pin melpa-stable
+     :config (add-hook 'after-save-hook 'magit-after-save-refresh-status))
+   #+END_SRC
+
+** Smexy command completion (sorry)
+   Since I have the memory of a goldfish, having to remember more than 3 command names (dired, ansi-term, make-directory) is miles of mental overhead. So we have =smex= for that.
+   #+BEGIN_SRC emacs-lisp
+   (use-package smex
+     :ensure t
+     :bind (("M-x" . smex)
+            ("M-X" . smex-major-mode-commmands)
+	    ("C-c C-c M-x" . execute-extended-command))
+     :config (smex-initialize))
+   #+END_SRC
+
+** Making things pretty
+   Mmmm, eye candy is best candy. We need literally all the icons (in the world) first.
+   #+BEGIN_SRC emacs-lisp
+   (use-package all-the-icons :ensure t)
+   #+END_SRC
+   Then we get some saucy themes
+   #+BEGIN_SRC emacs-lisp
+   (use-package doom-themes
+     :ensure t
+     :config
+     (setq doom-themes-enable-bold t
+           doom-themes-enable-italic t)
+     (load-theme 'doom-molokai t)
+     (doom-themes-org-config))
+   #+END_SRC
+   And finally, our font. I use Source Code Pro. It's noice. Get it for your system first before using it here.
+   #+BEGIN_SRC emacs-lisp
+   (set-face-attribute 'default nil
+     :family "Source Code Pro"
+     :height 100
+     :width 'condensed
+     :foundry "SRC" ;; Not sure if this is necessary
+     :weight 'semi-bold)
+   #+END_SRC
+   Enough superficiality. Back to business
+
+** Org
+   Org stuff
+   #+BEGIN_SRC emacs-lisp
+   ;; Little tweaks
+   (setq org-src-tabs-natively t)
+   (setq org-startup-truncated nil)
+   #+END_SRC
+   Then some pretty org bullets
+   #+BEGIN_SRC emacs-lisp
+   (use-package org-bullets
+     :ensure t
+     :config (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
+   #+END_SRC
+
+** Language Stuff
+   A bunch of language packages
+   But first, we need some =company= (sorry).
+   #+BEGIN_SRC emacs-lisp
+   (use-package company :ensure t)
+   #+END_SRC
+   *Then* we get our languages (minimally configured)
+   #+BEGIN_SRC emacs-lisp
+   (use-package haskell-mode :ensure t) ;; Haskell
+   (use-package rjsx-mode :ensure t :mode "\\.js\\'")
+   (use-package yaml-mode :ensure t)
+   (use-package elpy :ensure t)
+   (use-package cider :ensure t)
+   #+END_SRC
+
+** Quality of life
+   A few tweaks that improve the general experience like...
+   A preview pane for latex
+   #+BEGIN_SRC emacs-lisp
+   (use-package latex-preview-pane :ensure t)
+   #+END_SRC
+   Visual tweaks to make emacs more minimal
+   #+BEGIN_SRC emacs-lisp
+   (menu-bar-mode -1)
+   (tool-bar-mode -1)
+   (scroll-bar-mode -1)
+   (setq inhibit-startup-message t)
+   (add-to-list 'default-frame-alist '(fullscreen . maximized))
+   #+END_SRC
+   Starting ido each time we boot up
+   #+BEGIN_SRC emacs-lisp
+   (ido-mode t)
+   #+END_SRC
+   Navigation easier
+   #+BEGIN_SRC emacs-lisp
+   (global-set-key (kbd "C-c <C-right>") 'windmove-right)
+   (global-set-key (kbd "C-c <C-left>") 'windmove-left)
+   (global-set-key (kbd "C-c <C-up>") 'windmove-up)
+   (global-set-key (kbd "C-c <C-down>") 'windmove-down)
+   #+END_SRC
+   
+And that's all she wrote!
+

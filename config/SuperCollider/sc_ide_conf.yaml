@@ -1,0 +1,28 @@
+IDE:
+  editor:
+    blinkDuration: 600
+    disableBlinkingCursor: false
+    font:
+      antialias: 2
+      family: Source Code Pro
+      size: 10
+    highlightBracketContents: true
+    highlightCurrentLine: false
+    inactiveEditorFadeAlpha: 64
+    indentWidth: 4
+    insertMatchingTokens: false
+    lineWrap: true
+    spaceIndent: false
+    stepForwardEvaluation: false
+    theme: default
+    useComboBox: false
+    useComboBoxWhenSplitting: false
+  interpreter:
+    autoStart: true
+    configFile: ""
+    runtimeDir: ""
+    standalone: false
+  postWindow:
+    lineWrap: false
+    scrollback: 1000
+  startWithSession: last
